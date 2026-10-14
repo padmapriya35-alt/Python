@@ -1,0 +1,6 @@
+{
+  "name": "Python Knowledge Base",
+  "description": "A comprehensive, concept-first programming textbook covering Python fundamentals, data structures, OOP, advanced internals, Streamlit, web backends, and cybersecurity.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

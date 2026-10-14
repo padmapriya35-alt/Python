@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: #1e293b;
+    background-color: #f8fafc;
+  }
+
+  code, pre, kbd {
+    font-family: var(--font-mono);
+  }
+}
+
+/* Custom scrollbars for textbook reading experience */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Clean Print / Export to PDF stylesheet */
+@media print {
+  header, aside, .no-print, button:not(.print-keep), [role="dialog"] {
+    display: none !important;
+  }
+
+  main {
+    padding-left: 0 !important;
+    max-width: 100% !important;
+  }
+
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  .shadow-xs, .shadow-2xs, .shadow-sm, .shadow-md, .shadow-2xl {
+    box-shadow: none !important;
+  }
+
+  pre {
+    border: 1px solid #cbd5e1 !important;
+    background-color: #f8fafc !important;
+    color: #0f172a !important;
+  }
+}
